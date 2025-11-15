@@ -1,0 +1,99 @@
+{
+  "summary": {
+    "tests_run": 15,
+    "tests_passed": 15,
+    "success_rate": 100.0
+  },
+  "results": [
+    {
+      "test_name": "Seed Database",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: {\n  \"message\": \"Database seeded successfully\"\n}...",
+      "timestamp": "2025-11-08T15:56:35.722225"
+    },
+    {
+      "test_name": "User Signup",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: {\n  \"id\": \"7a4744bb-a068-44bb-9996-6974e5da4010\",\n  \"email\": \"test_155635@byklab.com\",\n  \"full_name\": \"Test User\",\n  \"created_at\": \"2025-11-08T15:56:35.914636Z\",\n  \"subscription_plan\": \"\\u00dccretsiz\"...",
+      "timestamp": "2025-11-08T15:56:36.672561"
+    },
+    {
+      "test_name": "User Login",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: {\n  \"id\": \"7a4744bb-a068-44bb-9996-6974e5da4010\",\n  \"email\": \"test_155635@byklab.com\",\n  \"full_name\": \"Test User\",\n  \"created_at\": \"2025-11-08T15:56:35.914636Z\",\n  \"subscription_plan\": \"\\u00dccretsiz\"...",
+      "timestamp": "2025-11-08T15:56:37.255447"
+    },
+    {
+      "test_name": "Get Subscription Plans",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"free\",\n    \"name\": \"\\u00dccretsiz\",\n    \"price\": 0,\n    \"features\": [\n      \"Blog eri\\u015fimi\",\n      \"Hakk\\u0131m\\u0131zda eri\\u015fimi\"\n    ],\n    \"has_anatomy\": false,\n    \"has_vi...",
+      "timestamp": "2025-11-08T15:56:37.544222"
+    },
+    {
+      "test_name": "Activate Subscription (Demo Payment)",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: {\n  \"success\": true,\n  \"message\": \"Aboneli\\u011finiz aktif hale geldi\",\n  \"plan\": \"Geli\\u015fmi\\u015f\"\n}...",
+      "timestamp": "2025-11-08T15:56:37.627842"
+    },
+    {
+      "test_name": "Get All Exercises",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"77d84862-2027-4105-86cb-da38a3032e85\",\n    \"name\": \"Bench Press\",\n    \"muscle_group\": \"G\\u00f6\\u011f\\u00fcs\",\n    \"difficulty\": \"Orta\",\n    \"duration\": \"3x12\",\n    \"description\": \"G\\u...",
+      "timestamp": "2025-11-08T15:56:37.708083"
+    },
+    {
+      "test_name": "Get Exercises for G\u00f6\u011f\u00fcs",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"77d84862-2027-4105-86cb-da38a3032e85\",\n    \"name\": \"Bench Press\",\n    \"muscle_group\": \"G\\u00f6\\u011f\\u00fcs\",\n    \"difficulty\": \"Orta\",\n    \"duration\": \"3x12\",\n    \"description\": \"G\\u...",
+      "timestamp": "2025-11-08T15:56:37.782896"
+    },
+    {
+      "test_name": "Get Exercises for S\u0131rt",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"07a2de65-76d2-4858-a24e-1eeb27d1c99b\",\n    \"name\": \"Deadlift\",\n    \"muscle_group\": \"S\\u0131rt\",\n    \"difficulty\": \"\\u0130leri\",\n    \"duration\": \"4x8\",\n    \"description\": \"T\\u00fcm v\\u...",
+      "timestamp": "2025-11-08T15:56:37.953519"
+    },
+    {
+      "test_name": "Get Exercises for Bacak",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"25e60eb3-4c13-46db-9f03-98df4f4da9df\",\n    \"name\": \"Squat\",\n    \"muscle_group\": \"Bacak\",\n    \"difficulty\": \"Orta\",\n    \"duration\": \"4x10\",\n    \"description\": \"Bacak kaslar\\u0131n\\u013...",
+      "timestamp": "2025-11-08T15:56:38.028065"
+    },
+    {
+      "test_name": "Get Exercises for Omuz",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"e97d49d9-651b-490a-9fd9-02544925f6c1\",\n    \"name\": \"Shoulder Press\",\n    \"muscle_group\": \"Omuz\",\n    \"difficulty\": \"Ba\\u015flang\\u0131\\u00e7\",\n    \"duration\": \"3x15\",\n    \"description...",
+      "timestamp": "2025-11-08T15:56:38.209513"
+    },
+    {
+      "test_name": "Get Exercises for Kol",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"457f6a21-47de-490d-af54-a36a7dc801a3\",\n    \"name\": \"Bicep Curl\",\n    \"muscle_group\": \"Kol\",\n    \"difficulty\": \"Ba\\u015flang\\u0131\\u00e7\",\n    \"duration\": \"3x12\",\n    \"description\": \"B...",
+      "timestamp": "2025-11-08T15:56:38.284295"
+    },
+    {
+      "test_name": "Get Exercises for Kar\u0131n",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"9b274e27-d44e-484a-bf41-77aa28bbe8a5\",\n    \"name\": \"Plank\",\n    \"muscle_group\": \"Kar\\u0131n\",\n    \"difficulty\": \"Ba\\u015flang\\u0131\\u00e7\",\n    \"duration\": \"3x60sn\",\n    \"description\"...",
+      "timestamp": "2025-11-08T15:56:38.463650"
+    },
+    {
+      "test_name": "Get All Blog Posts",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: [\n  {\n    \"id\": \"8d8d9ad7-79e6-4559-9220-f8689815e787\",\n    \"title\": \"Spor Biliminin Temelleri\",\n    \"excerpt\": \"Modern spor bilimi nas\\u0131l \\u00e7al\\u0131\\u015f\\u0131r? Biyomekanik, fizyoloji ve pe...",
+      "timestamp": "2025-11-08T15:56:38.538674"
+    },
+    {
+      "test_name": "Get Individual Blog Post",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: {\n  \"id\": \"8d8d9ad7-79e6-4559-9220-f8689815e787\",\n  \"title\": \"Spor Biliminin Temelleri\",\n  \"excerpt\": \"Modern spor bilimi nas\\u0131l \\u00e7al\\u0131\\u015f\\u0131r? Biyomekanik, fizyoloji ve performans o...",
+      "timestamp": "2025-11-08T15:56:38.750000"
+    },
+    {
+      "test_name": "Get Dashboard Stats",
+      "success": true,
+      "details": "Status: 200, Expected: 200, Response: {\n  \"total_workouts\": 42,\n  \"total_duration\": \"18.5 saat\",\n  \"calories_burned\": 8420,\n  \"muscle_balance\": 87,\n  \"weekly_progress\": [\n    {\n      \"day\": \"Pzt\",\n      \"value\": 65\n    },\n    {\n      \"day...",
+      "timestamp": "2025-11-08T15:56:38.819436"
+    }
+  ]
+}

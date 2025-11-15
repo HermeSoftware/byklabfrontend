@@ -1,0 +1,173 @@
+/* Main app container - no center alignment */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+}
+
+/* Hero section styles */
+.hero-gradient {
+  background: radial-gradient(ellipse at top, rgba(15, 110, 50, 0.15) 0%, transparent 70%);
+}
+
+/* Animated neon border */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(15, 110, 50, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(15, 110, 50, 0.5), 0 0 60px rgba(15, 110, 50, 0.3);
+  }
+}
+
+.neon-pulse {
+  animation: neon-pulse 2s ease-in-out infinite;
+}
+
+/* Shimmer loading effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Video container */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Custom button hover */
+.btn-primary {
+  background: #0f6e32;
+  color: white;
+  border-radius: 9999px;
+  padding: 12px 32px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(15, 110, 50, 0.5);
+  border-color: #0f6e32;
+}
+
+/* Auth form styles */
+.auth-form {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Dashboard card */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(15, 110, 50, 0.3);
+}
+
+/* Pricing card active state */
+.pricing-card-active {
+  border: 2px solid #0f6e32;
+  box-shadow: 0 0 30px rgba(15, 110, 50, 0.4);
+}
+
+/* Anatomy muscle hover */
+.muscle-area {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.muscle-area:hover {
+  opacity: 0.3;
+  background: #0f6e32;
+}
+
+/* Blog content typography */
+.blog-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.blog-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.blog-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.blog-content ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-content code {
+  background: rgba(15, 110, 50, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #0f6e32;
+  font-family: 'Courier New', monospace;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid #0f6e32;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+/* Responsive video grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
